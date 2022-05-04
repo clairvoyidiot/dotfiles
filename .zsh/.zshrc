@@ -1,12 +1,15 @@
-
 # LANG
 export LANG=ja_JP.UTF-8
 
 # starship
 eval "$(starship init zsh)"
 
+# ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
 # rbenv
 eval "$(rbenv init -)"
+
 
 # zinit
 source /opt/homebrew/opt/zinit/zinit.zsh
@@ -55,4 +58,4 @@ alias untbz='tar -xjvf'
 
 alias sudo='sudo '
 
-alias upapp='echo Homebrew && brew update -y && brew upgrade && echo Homebrew Cask && brew update --cask --greedy -y && brew upgrade --cask --greedy && echo Mac App Store && mas outdated && mas upgrade'
+alias upapp='echo Homebrew && brew update && brew upgrade && echo Homebrew Cask && brew update --cask --greedy && brew upgrade --cask --greedy && echo Mac App Store && mas outdated && mas upgrade'
