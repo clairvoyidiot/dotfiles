@@ -4,6 +4,9 @@ export LANG=ja_JP.UTF-8
 # starship
 eval "$(starship init zsh)"
 
+# NodeJS
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
 # ruby
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
@@ -57,5 +60,8 @@ alias untgz='tar -xzvf'
 alias untbz='tar -xjvf'
 
 alias sudo='sudo '
+
+alias vim='nvim'
+alias diff='colordiff'
 
 alias upapp='echo Homebrew && brew update && brew upgrade && echo Homebrew Cask && brew update --cask --greedy && brew upgrade --cask --greedy && echo Mac App Store && mas outdated && mas upgrade'
