@@ -10,12 +10,9 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 # ruby
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
-# rbenv
-eval "$(rbenv init -)"
-
-
 # zinit
 source /opt/homebrew/opt/zinit/zinit.zsh
+
 
 # option
 
@@ -63,5 +60,6 @@ alias sudo='sudo '
 
 alias vim='nvim'
 alias diff='colordiff'
+alias python='python3'
 
 alias upapp='echo Homebrew && brew update && brew upgrade && echo Homebrew Cask && brew update --cask --greedy && brew upgrade --cask --greedy && echo Mac App Store && mas outdated && mas upgrade'
