@@ -1,0 +1,8 @@
+format = """
+[ ](white)$all
+"""
+
+scan_timeout = 10
+
+[gcloud]
+format = '$symbol'
